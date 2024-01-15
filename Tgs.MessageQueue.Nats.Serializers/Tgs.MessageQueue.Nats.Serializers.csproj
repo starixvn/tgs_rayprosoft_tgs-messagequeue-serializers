@@ -4,6 +4,13 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>Tgs.MessageQueue.Nats.Serializers</RootNamespace>
+    <PackageId>Tgs.MessageQueue.Nats.Serializers</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Raypro</Authors>
+    <Product>Tgs.MessageQueue.Nats.Serializers</Product>
+    <PackageProjectUrl>https://gitlab.com/rayprosoft/tgs-messagequeue-serializers</PackageProjectUrl>
+    <RepositoryUrl>https://gitlab.com/rayprosoft/tgs-messagequeue-serializers.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

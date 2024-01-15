@@ -1,0 +1,22 @@
+include:
+  - project: rayprosoft/tgs-ci-scripts
+    ref: main
+    file: GitLab/Templates/gitlab-job-templates.yml
+
+variables:
+  BuildCacheKey: Tgs.NatsSerializers.$CI_PIPELINE__IID
+
+stages:
+  - build
+  - publish
+
+build-code:
+  extends: .build-code-template
+
+push-nuget:
+  extends: .push-nuget-template
+  script:
+    - push_package "Tgs.MessageQueue.Nats.Serializers"
+  artifacts:
+    paths:
+      - Tgs.MessageQueue.Nats.Serializers/bin/$BuildConfiguration/*.nupkg
